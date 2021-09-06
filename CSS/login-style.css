@@ -1,0 +1,157 @@
+body.login .login-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
+    url(../IMGs/162351370_1325209814531438_6162174114940051912_n.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+body.login .container-div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-top: 3%;
+    min-height: 500px;
+}
+
+body.login .container-div .login-container {
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+body.login .container-div .login-container .text-line-though span {
+    color: #fff;
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.login .container-div .login-container .text-line-though {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-weight: 700;
+    color: #272727;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+body.login .container-div .login-container .input-group {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+body.login .container-div .login-container .input-group i {
+    position: absolute;
+    color: #777;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+}
+
+body.login .container-div .login-container .other-login{
+    padding-bottom: 20px;
+}
+
+body.login .container-div .login-container .input-group input {
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px 10px 5px 35px;
+}
+
+body.login .container-div .login-container .btn {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+body.login .container-div .login-container .btn a{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 7px;
+} 
+
+body.login .container-div .login-container .btn a:hover{
+    background-color: #fff;
+    color: #21beff;
+}
+body.login .container-div .login-container .btn button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 7px;
+} 
+
+body.login .container-div .login-container .btn button:hover{
+    background-color: #fff;
+    color: #21beff;
+}
+
+body.login .container-div .login-container .other-login a {
+    width: 65% !important;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+body.login .container-div .login-container .other-login .btn-info{
+    color: #fff;
+}
+
+body.login .container-div .login-container .other-login p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+body.login .container-div .login-container .alert{
+    margin: 0 12%;
+    padding: 0;
+}
+
+body.login .container-div .login-container .alert .input-group{
+    justify-content: center;
+    display: none;
+}
+
+.error{
+    color: #dc3545 !important;
+}
+
+body.login .container-div .login-container .checkbox label {
+    color: #fff;
+}
+
+body.login .container-div .login-container .checkbox a {
+    color: #21beff;
+}
+
+body.login .container-div div.login-container form .btn-now{
+    background-color: transparent ;
+}
+
+body.login .container-div div.login-container form .btn-now a{
+    color: #21beff;
+}
+
+body.login .container-div div.login-container form .btn-now a:hover{
+    color: #fff;
+    background-color: #21beff;
+}

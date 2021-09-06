@@ -1,0 +1,1177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Divine Shop - Không bản quyền lắm</title>
+    <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />
+    <link rel="stylesheet" href="CSS/font/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="icon" href="IMGs/divine_esports_1.png" type="image/png">
+    <link href="CSS/bootstrap-5.0.0-beta2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/product-detail-style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/responsive.css" type="text/css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="CSS/slick-1.8.1/slick/slick.css">
+    <script src="CSS/bootstrap-5.0.0-beta2-dist/js/bootstrap.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="JS/javascript.js"></script>
+    <script src="CSS/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input[value="Đăng nhập để bình luận"]').click(function(){
+                $('.account-content').show();
+                $('.momo-quick').hide();
+                showInModal('#mini-register-tab', '#mini-login-tab', '#mini-register-content', '#mini-login-content');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="top-header position-fixed top-0 start-0 w-100">
+        <div class="container">
+            <div class="left-top-header pt-1">
+                <div class="slide-news-container">
+                    <a class="carousel-control-prev" role="button" data-bs-target="#slide-news" data-bs-slide="prev">
+                        <span aria-hidden="true"><i class="far fa-caret-square-left"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" role="button" data-bs-target="#slide-news" data-bs-slide="next">
+                        <span aria-hidden="true"><i class="far fa-caret-square-right"></i></span>
+                        <span class="visually-hidden">next</span>
+                    </a>
+                    <div id="slide-news" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://divineshop.vn/data-mobile" class="d-block w-100" id="new-slide-0">
+                                    <i class="fab fa-hotjar"></i>
+                                    Mua Data Viettel, Vina, Mobi ưu đã lên tới 15%
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://news.divine.vn/top-nhung-tua-game-sinh-ton-khong-the-bo-qua-danh-cho-game-thu-pc/"
+                                    class="d-block w-100" id="new-slide-1">
+                                    <i class="fab fa-hotjar"></i>
+                                    Top những tựa game sinh tồn không thể bỏ qua dành cho game thủ PC
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://news.divine.vn/the-last-of-us-2-tro-thanh-tua-game-nhan-nhieu-giai-thuong-danh-gia-nhat-trong-lich-su/"
+                                    class="d-block w-100" id="new-slide-2">
+                                    <i class="fas fa-gamepad"></i>
+                                    The Last of Us 2 trở thành tựa game nhận nhiều giải thưởng danh giá nhất trong lịch
+                                    sử
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://news.divine.vn/yakuza-345-tiep-buoc-nhung-nguoi-tien-nhiem-dat-chan-len-pc/"
+                                    class="d-block w-100" id="new-slide-3">
+                                    <i class="fas fa-gamepad"></i>
+                                    Yakuza 3,4,5 tiếp bước những người tiền nhiệm đặt chân lên PC!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-top-header text-white">
+                Hỗ trợ:
+                <a href="#">1900 633 305</a>
+            </div>
+        </div>
+    </div>
+    <header class="home-page fixed-header position-fixed w-100">
+        <nav id="sidebar" class="navbar">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="menu-list">
+                <ul id="menu-content" class="menu-content">
+                    <li class="mt-0 collapsed" style="background-color: #4267B2">
+                        <div class="header-btn text-white">
+                            <i class="fas fa-user-circle" style="font-size: 30px;"></i>
+                            <span class="text-white">
+                                <a href="#" class="text-white">
+                                    Đăng nhập 
+                                </a>
+                                <br>
+                                <small style="margin: 40px;">Xem nhiều thông tin hơn</small>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home icon-font18"></i>
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li data-bs-toggle="collapse" data-bs-target="#danh-muc" aria-expanded="false" aria-controls="#danh-muc">
+                        <a>
+                            <i class="fa fa-bars icon-font18"></i>
+                            Danh mục sản phẩm
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <ul class="sub-menu collapse" id="danh-muc" aria-expanded="false">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-steam-symbol"></i>
+                                Game trên Steam            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-trophy"></i>
+                                PUBG            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-creative-commons"></i>
+                                Game trên Origin            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-battle-net"></i>
+                                Game trên Battle.net            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-wallet"></i>
+                                Steam Wallet            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-mobile-alt"></i>
+                                Nạp Game Mobile            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-broadcast-tower"></i>
+                                Gói Data Mobile            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google-play"></i>
+                                Google Play, iTunes            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-magic"></i>
+                                Tiện ích            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-wallet"></i>
+                                Nintendo Eshop Card            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-xbox"></i>
+                                Xbox Gift Card            
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-gamepad"></i>
+                            Hướng dẫn mua hàng          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-handshake"></i>
+                            Liên hệ hợp tác          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-credit-card"></i>
+                            Hình thức thanh toán          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-life-ring"></i>
+                            Hỗ trợ          
+                        </a>
+                    </li>    
+                    <hr>
+                    <li style="margin: 0;">
+                      <i class="fa fa-phone"></i>
+                      <a href="#" style="font-size: 17px;">1900 633 305</a>
+                    </li>
+                    <li style="margin: 0;">
+                        <a href="#" style="font-size: 17px;" target="_blank">
+                            <i class="fab fa-facebook-messenger"></i>
+                            Nhắn tin cho Shop 
+                        </a>
+                    </li>   
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+        <div class="header-container container d-flex position-relative mt-0">
+            <div id="sidebarCollapse" class="btn-menu">
+                <i class="fas fa-bars" style="font-size: 20px; vertical-align: middle"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img style="margin-right: 10px; width: 60px;" src="IMGs/logo_divine_pure_white.png">
+                    <img style="width: 100px" src="IMGs/logo-1.png">
+                </a>
+            </div>
+            <div class="search-form">
+                <form class="search-control" onsubmit="event.preventDefault()">
+                    <input type="text" name="search" class="search-box ac_input" placeholder="Nhập sản phẩm cần tìm..." autocomplete="off">
+                    <div class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="cart-mobile">
+                <div class="align-items-center d-flex" id="update-cart-mobile">
+                    <a href="">
+                        <i class="fas fa-shopping-cart cart-size-mobile"></i> 
+                        <span class="quantity_mobile">0</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-btn">
+                <div class="header-btn d-flex flex-row ms-1 align-items-center">
+                    <div class="mini-login">
+                        <div class="text-login-header">
+                            <i class="fas fa-user"></i>
+                            <span>Đăng nhập</span>
+                        </div>
+                        <div class="dropdown-menu drop-mini-login">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-mini-login" id="open_login_mini" class="open_login_mini">
+                                <div class="element-menu-login style-login">
+                                Đăng nhập
+                                </div>
+                            </a>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-mini-login" id="open_register_mini" class="open_register_mini">
+                                <div class="element-menu-login style-login">
+                                    Tạo tài khoản
+                                </div>
+                            </a>
+                            <a href="#" class="login-fplus">
+                                <div class="element-menu-login text-login-facebook">
+                                        <span style="float: left;width: 48px;border-right: 1px solid rgba(0, 0, 0, 0.2);">
+                                            <i class="fab fa-facebook-f" style="vertical-align: middle;align-items: center;font-size: 20px"></i>
+                                        </span>
+                                    Đăng nhập Facebook
+                                </div>
+                            </a>
+                            <a href="#" class="login-gplus">
+                                <div class="element-menu-login text-login-google">
+                                        <span style="float: left;border-right: 1px solid rgba(0, 0, 0, 0.2);width: 48px">
+                                            <i class="fab fa-google-plus-g" style="vertical-align: middle;align-items: center;font-size: 20px"></i>
+                                        </span>
+                                    Đăng nhập Google
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="mini-profile-login" style="display:none;">
+                        <div class="avatar">
+                            <a href="#">
+                                <img class="header-avatar" src="IMGs/avt.png" alt="Avatar">
+                            </a>
+                        </div>
+                        <a href="#" class="text-white" style="padding: 0 10px;text-transform: capitalize;">
+                            iamveoveo01              
+                        </a>
+                    </div>
+                    <div id="home-cart" class="dropdown dropdown-header shopping-cart mg-cart">
+                        <div data-bs-toggle="dropdown" class="heading" aria-expanded="false">
+                            <div class="align-items-center d-flex" id="update-cart">
+                                <i class="fas fa-shopping-cart cart-size text-white"></i>
+                                <b class="cart-text">Giỏ hàng</b>
+                                <span class="quantity">0</span>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu drop-mini-cart" id="dropdown-detail-cart"><li>
+                            <li>
+                                <div class="text-cart-current">
+                                    Giỏ hàng hiện tại
+                                </div>
+                                <table class="table" id="detail_cart">
+                                    <tr id="sample-row">
+                                        <td class="text-start hide-text-option-cart name-item"></td>
+                                        <td class="text-end number-of-items"><i style="color: black"></i></td>
+                                        <td class="text-end price-item"></td>
+                                        <td class="text-center">
+                                            <button type="button" title="Loại bỏ" class="btn btn-danger btn-xs remove" onclick="removeCartClick(this)">
+                                                <i class="fa fa-times" style="color: #fd0909 !important;vertical-align: middle;font-size: 12px"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li class="dropdown-item" id="no_product">
+                                Không có sản phẩm trong giỏ hàng!
+                            </li>
+                            <li class="d-flex justify-content-end">
+                                <span style="font-weight: 700;font-size: 20px;">Thành tiền:</span>
+                                <span id="total-payable" style="padding-right: 10px; margin-left: 120px; font-size: 20px; min-width: 66px;">0,000đ</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-mini-login" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom:none;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6 account-content" style="display: none;">
+                                    <div class="title-login">Đăng nhập</div>
+                                    <p>
+                                        Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn
+                                    </p>
+                                    <div style="margin-top: 84px;">
+                                        <img src="IMGs/personnel.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 momo-quick" style="display: none;">
+                                    <div class="momo-payment-header">
+                                        <div class="title-login">Mua hàng không cần đăng nhập</div>
+                                        <div class="momo-payment-product-detail">
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                            <div class="card-text"></div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="momo-payment-btn momo-width-btn-lg">
+                                                <img src="IMGs/momo-logo.png">
+                                                <span class="momo-payment-text">Mua siêu tốc với MoMo</span>
+                                            </button>
+                                            <div class="momo-payment-description">
+                                                Quét mã, thanh toán ngay, không cần đăng nhập
+                                            </div>
+                                            <div class="momo-payment-option">
+                                                <a href="#" class="momo-payment-option-link">
+                                                    Thanh toán bằng các phương thức khác
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="momo-payment-note">
+                                            Tạo tài khoản để tham ra chương trình tích điểm, hoàn tiền khách VIP
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" style="padding: 0 25px 0 46px;">
+                                    <nav>
+                                        <div class="nav justify-content-center" id="content-login" role="tablist">
+                                            <a class="nav-link" id="mini-login-tab" data-bs-toggle="tab" data-bs-target="#mini-login-content" type="button" aria-controls="mini-login-content" aria-selected="false">Đăng nhập</a>
+                                            <a class="nav-link" id="mini-register-tab" data-bs-toggle="tab" data-bs-target="#mini-register-content" type="button" aria-controls="mini-register-content" aria-selected="false">Tạo tài khoản</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade" id="mini-login-content" role="tabpanel" aria-labelledby="mini-login-tab">
+                                            <div class="form-login" style="margin: 22px 0 15px 0;">
+                                                <div class="login-container">
+                                                    <label for="">Địa chỉ Email</label>
+                                                    <div class="input-group">
+                                                        <i class="far fa-envelope"></i>
+                                                        <input type="text" name="email" placeholder="Nhập địa chỉ Email" id="input-email-login" class="input-popup-login">
+                                                    </div>
+                                                </div>
+                                                <div class="login-container">
+                                                    <label for="">Mật khẩu</label>
+                                                    <div class="input-group">
+                                                        <i class="fas fa-lock"></i>
+                                                        <input type="password" name="password" placeholder="Nhập mật khẩu" id="input-password-login" class="input-popup-login">
+                                                    </div>
+                                                </div>
+                                                <a type="button" id="btn-login-mini" class="btn btn-submit-imfp" data-bs-dismiss="modal" aria-label="close">Đăng nhập</a>
+                                                <div class="other-login">
+                                                    <hr style="margin-top:22px;">
+                                                    <div class="text-other-login">Hoặc đăng nhập qua MXH</div>
+                                                    <br>
+                                                    <div class="list-login" style="margin-bottom: 6px;">
+                                                        <a href="#" class="login-fplus btn btn-secondary">
+                                                            <span>
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </span>
+                                                            Đăng nhập bằng Facebook
+                                                        </a>
+                                                        <a href="#" class="login-gplus btn btn-secondary" style="margin-top:12px;">
+                                                            <span>
+                                                                <i class="fab fa-google-plus-g"></i>
+                                                            </span>
+                                                            Đăng nhập bằng Google
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="mini-register-content" role="tabpanel" aria-labelledby="mini-register-tab">
+                                            <div class="title-login">Tạo tài khoản</div>
+                                            <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn <span style="font-weight: 700; font-size: 17px;">(SOON)</span></p>
+                                            <div style="margin-top: 29px;">
+                                                <img src="IMGs/bird.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="border-top:none;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="home-page banner-home" style="background-color: #f7f7f7;margin-bottom: 15px;">
+        <div class="menu-2 mt-0">
+            <div class="container" style="margin-top: 6px;">
+                <div class="menu-catalog d-flex justify-content-between">
+                    <div class="header-menu d-flex" id="header-menu">
+                        <div class="bar-btn">
+                            <i class="fas fa-bars"></i>
+                            <span>Danh mục sản phẩm</span>
+                        </div>
+                        <div class="nav-menu" style="display: none;">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-steam-symbol"></i>
+                                        <span>Game trên Steam</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-trophy"></i>
+                                        <span>PUBG</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-creative-commons"></i>
+                                        <span>Game trên Origin</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-battle-net"></i>
+                                        <span>Game trên Battle.net</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-wallet"></i>
+                                        <span>Steam Wallet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-mobile-alt"></i>
+                                        <span>Nạp Game Mobile</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-broadcast-tower"></i>
+                                        <span>Gói Data Mobile</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-google-play"></i>
+                                        <span>Google Play, iTunes</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-magic"></i>
+                                        <span>Tiện ích</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-wallet"></i>
+                                        <span>Nintendo Eshop Card</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-xbox"></i>
+                                        <span>Xbox Gift Card</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-menu">
+                        <div class="row menu-tab-all service mx-0">
+                            <div class="quick-menu head-link">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-gamepad"></i>
+                                    <span>Hướng dẫn mua hàng</span>
+                                </a>
+                            </div>
+                            <div class="quick-menu head-link">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Liên hệ hợp tác</span>
+                                </a>
+                            </div>
+                            <div class="quick-menu head-link">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Hình thức thanh toán</span>
+                                </a>
+                            </div>
+                            <div class="quick-menu head-link">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-life-ring"></i>
+                                    <span>Hỗ trợ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trang-sp chi-tiet-sp">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="tai-khoan-netflix-1-user-1-thang.html">
+                            Tài khoản Netflix Premium for 1 User (1 tháng)
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="container-title title-detail-product">
+                <div class="fontSize-title">
+                    Tài khoản Netflix Premium for 1 User (1 Tháng)
+                </div>
+            </div>
+            <div class="container-body">
+                <div class="sp-header clearfix">
+                    <div class="slider-container">
+                        <div class="slider sp-slider-big">
+                            <div class="img-item">
+                                <div class="click_show_slide" style="height: 100%;width: 100%;">
+                                    <img src="IMGs/1user1thang.png"
+                                        title="Tài khoản Netflix Premium for 1 User (1 Tháng)"
+                                        alt="Tài khoản Netflix Premium for 1 User (1 Tháng)" class="slide-product-big">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider sp-slider-small">
+                            <div class="prev-img prev-samaller active">
+                                <img src="IMGs/1user1thang.png" alt="Tài khoản Netflix Premium for 1 User (1 Tháng)">
+                            </div>
+                            <div class="prev-img prev-samaller">
+                                <img src="IMGs/5user1thang.png" alt="Tài khoản Netflix Premium for 1 User (1 Tháng)">
+                            </div>
+                            <div class="prev-img prev-samaller">
+                                <img src="IMGs/gia-han-netflix-1m.png" alt="Tài khoản Netflix Premium for 1 User (1 Tháng)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-info">
+                        <div class="sp-info-top">
+                            <div class="sp-info-top-item col-4">
+                                <div class="sp-info-top-item-icon">
+                                    <img style="width: 20px;" src="IMGs/item-icon-1.png">
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="text">Mã sản phẩm</div>
+                                    <div class="text-1">acc netflix1</div>
+                                </div>
+                            </div>
+                            <div class="sp-info-top-item col-4">
+                                <div class="sp-info-top-item-icon">
+                                    <img style="width: 20px;" src="IMGs/item-icon-2.png">
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="text">Tình trạng</div>
+                                    <span style="color:#53af2e; font-weight:bold;">Còn hàng</span>
+                                </div>
+                            </div>
+                            <div class="sp-info-top-item col-4">
+                                <div class="sp-info-top-item-icon">
+                                    <img style="width: 35px;" src="IMGs/item-icon-3.png">
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="text">Link gốc</div>
+                                    <div class="text-1">Sản phẩm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-price-text">Giá sản phẩm</div>
+                        <div class="sp-price-old">89,000đ</div>
+                        <div class="sp-price-new">
+                            <div class="price">59,000đ</div>
+                            <div class="price-info">
+                                <span class="dis-p">-34%</span>
+                            </div>
+                        </div>
+                        <form action="" id="product">
+                            <hr>
+                            <div id="product-affiliate" style="margin-top:20px;">
+                                <h5>Chọn hạn sử dụng</h5>
+                                <div class="show-text-affiliate">
+                                    <a class="btn current_affiliate">1 Tháng</a>
+                                    <a class="btn not_current_affiliate">65 Ngày</a>
+                                    <a class="btn not_current_affiliate">SP Netflix khác</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-3 col-12 product-content-button" style="padding: 0 0 10px 15px;">
+                                    <label class="product-content-button-mr">Số lượng:</label>
+                                    <br>
+                                    <div class="qty" style="display: -webkit-inline-box;">
+                                        <a class="qtyBtn mines">-</a>
+                                        <input type="text" name="quantity" value="1" size="2" id="input-quantity"
+                                            class="form-control"
+                                            style="width:46px;height:26px;font-weight: bold;text-align: center;border-radius:0"
+                                            autocomplete="off">
+                                        <a class="qtyBtn plus">+</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-12 row bar-buy-product product-content-button">
+                                    <div id="button-cart-redirect"
+                                        class="btn btn-green-bg col-lg-5 product-content-button-ml"
+                                        style="margin-top: 12px;width: 144px">
+                                        Mua Ngay
+                                    </div>
+                                    <div id="button-cart" class="btn btn-orange-bg col-lg-5 add-cart-orange"
+                                        style="width: 144px">
+                                        <i class="fa fa-shopping-cart" style="text-align: left;"></i>
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9 col-12">
+                                    <button type="button" id="momo-payment-guest-btn" class="momo-payment-btn momo-width-btn-lg" style="cursor: inherit;">
+                                        <img src="IMGs/momo-logo.png"><span class="momo-payment-text">
+                                            Mua siêu tốc với MoMo
+                                        </span>
+                                    </button>
+                                    <div class="momo-payment-description">
+                                        Quét mã, thanh toán ngay, không cần đăng nhập
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="tags">
+                            <img src="IMGs/tags.png">
+                            <b>Tag:</b>
+                            <span>
+                                <a href="#">moiviec</a>,
+                                <a href="#">giaitri</a>,
+                                <a href="#">hot</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="tutorial clearfix huongdan">
+                    <p>
+                        <strong>Quan trọng: Vui lòng KHÔNG THAY ĐỔI thông tin tài khoản, Divine sẽ không thể bảo hành
+                            nếu bạn thay đổi thông tin</strong>
+                    </p>
+                    <p>
+                        - Hệ thống có thể sẽ thay đổi mât khẩu của bạn vì lý do bảo mật. Trong trường hợp này, xin vui
+                        lòng nhắn tin đến CSKH để nhận mật khẩu mới theo đường dẫn này:&nbsp;
+                        <a href="#">http://m.me/divineshop.vn</a>
+                    </p>
+                    <p>
+                        - Hạn sử dụng của sản phẩm&nbsp;KHÔNG cộng dồn&nbsp;khi mua số lượng nhiều sản phẩm.
+                    </p>
+                    <p>
+                        -&nbsp;Vui lòng không chỉnh sửa phương thức thanh toán cũng như thay đổi gói cước của tài khoản
+                        Netflix. Divine Shop có thể sẽ từ chối bảo hành trong các trường hợp này. Nếu tài khoản quý
+                        khách bị mất Premium, xin hãy liên hệ CSKH để được hỗ trợ.
+                    </p>
+                </div>
+                <hr style="border: 0.5px solid #000000;">
+                <div class="list-title">
+                    <div class="fontSize-title">Chi tiết sản phẩm</div>
+                </div>
+                <div class="description-container">
+                    <div class="videoEmbed" style="text-align:center">
+                        <div id="videoEmbed">
+                            <video id="momo-video" width="80%" controls>
+                                <source src="IMGs/Mua hàng siêu tốc không cần tài khoản tại Divine Shop.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+                    <h2
+                        style="font-family:Roboto Condensed,sans-serif; font-size:20px; font-weight:700; line-height:1.5">
+                        THÔNG TIN SẢN PHẨM:</h2>
+                    <ul>
+                        <li>Shop sẽ gom 4&nbsp;người vào sử dụng chung 1 tài khoản, mỗi người sẽ được cấp 1 user riêng
+                            trong tài khoản để sử dụng</li>
+                        <li>Lưu ý chỉ sử dụng đúng user mang tiên mình và không được đổi pass trong quá trình sử dụng.
+                        </li>
+                        <li>Hạn sử dụng 30 ngày tính từ khi mua hàng.</li>
+                        <li>Cho phép 1 người sử dụng cùng một thời điểm</li>
+                        <li>Đăng nhập và xem phim tại: <a href="#" target="_blank"><span
+                                    style="color:#2980b9">https://www.netflix.com/vn/login</span></a></li>
+                    </ul>
+                    <p><strong>* LƯU Ý: </strong>Khách hàng không thay đổi mật khẩu và thông tin thanh toán. Nếu thông
+                        tin bị thay đổi Divine Shop sẽ tiến hành reset và thu hồi tài khoản.&nbsp;</p>
+                </div>
+                <div class="list-title">
+                    <div class="fontSize-title">Sản phẩm liên quan</div>
+                </div>
+                <div class="list-container list-relate">
+                    <div class="row">
+                        <div class="col-lg-3 col-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="IMGs/5user1thang.png" alt="Anh" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <div class="card-title">
+                                            Tài khoản Netflix Premium for 5 User (1 Tháng)
+                                        </div>
+                                    </a>
+                                    <div class="card-text">
+                                        <span class="current-price cur-p">239,000đ</span>
+                                        <span class="old-price">
+                                            <span class="old-p">260,000đ</span>
+                                            <span class="dis-p">-8%</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-btn-a">
+                                        <a href="#">
+                                            <i class="fas fa-shopping-cart "></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-btn">Mua ngay</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="IMGs/gia-han-netflix-1m.png" alt="Anh" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <div class="card-title">
+                                            Gói Gia Hạn Tài Khoản Netflix (1 Tháng)
+                                        </div>
+                                    </a>
+                                    <div class="card-text">
+                                        <span class="current-price cur-p">239,000đ</span>
+                                        <span class="old-price">
+                                            <span class="old-p">260,000đ</span>
+                                            <span class="dis-p">-8%</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-btn-a">
+                                        <a href="#">
+                                            <i class="fas fa-shopping-cart "></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-btn">Mua ngay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="clearfix">
+                <h2 class="col-lg-4" style=" margin: 0;font-size: 18px;font-weight: 700;padding-left: 0">
+                    Gửi câu hỏi và ý kiến của bạn về sản phẩm (Chúng tôi sẽ phản hồi trong 5 phút)
+                </h2>
+            </div>
+            <hr>
+            <div class="clearfix" id="list_comment">
+                <div class="info_person_commnet clearfix">
+                    <div class="row" style="padding: 7px 0;">
+                        <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                            <img src="IMGs/avt.png" alt="" style="max-width:50px;border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="detail-rating">
+                                <b>toan nguyen</b>
+                                <img src="IMGs/silver.png" alt="" width="15px" height="15px" style="margin-left: 5px;">
+                                <div style="color: #ea9f00;margin-left: 10px;">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Đã mua sản phẩm này
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 5px;"></div>
+                            <div class="text-review">bao gio co goi 1 nam vay :(</div>
+                            <div class="d-flex" style="margin-top: 5px;">
+                                <a style="color: #337ab7;">Trả lời</a>
+                                <div style="color: #a37878; margin-left: 20px;">
+                                    <small>3 giờ trước</small>
+                                </div>
+                            </div>
+                            <div class="reply-comment row">
+                                <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                                    <img src="IMGs/avt.png" alt="" style="max-width:50px;border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-11 col-10">
+                                    <div class="detail-rating">
+                                        <b>CSKH - Linda</b>
+                                        <i class="fa fa-check-circle" style="color: #3ecb78; margin-left: 5px;"></i>
+                                    </div>
+                                    <div style="padding-bottom: 5px;"></div>
+                                    <div class="text-review">@toan nguyen Dạ bạn hãy theo dõi kho hàng Netflix liên tục để nhận được thông báo mới nhất nha . Sớm thôi ạ </div>
+                                    <div class="d-flex" style="margin-top: 5px;">
+                                        <a style="color: #337ab7;">Trả lời</a>
+                                        <div style="color: #a37878; margin-left: 20px;">
+                                            <small>3 giờ trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_person_commnet clearfix">
+                    <div class="row" style="padding: 7px 0;">
+                        <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                            <img src="IMGs/avt.png" alt="" style="max-width:50px;border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="detail-rating">
+                                <b>Phúc Nguyễn Phạm Hoàng</b>
+                                <div style="color: #ea9f00;margin-left: 10px;">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Đã mua sản phẩm này
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 5px;"></div>
+                            <div class="text-review">Mình lỗi đăng nhập vào nó hiện Restart your membership ấy ạ</div>
+                            <div class="d-flex" style="margin-top: 5px;">
+                                <a style="color: #337ab7;">Trả lời</a>
+                                <div style="color: #a37878; margin-left: 20px;">
+                                    <small>5 giờ trước</small>
+                                </div>
+                            </div>
+                            <div class="reply-comment row">
+                                <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                                    <img src="IMGs/divine-fb-logo.jpg" alt="" style="max-width:50px;border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-11 col-10">
+                                    <div class="detail-rating">
+                                        <b>CSKH - RiasGremory</b>
+                                        <i class="fa fa-check-circle" style="color: #3ecb78; margin-left: 5px;"></i>
+                                    </div>
+                                    <div style="padding-bottom: 5px;"></div>
+                                    <div class="text-review">@Phúc Nguyễn Phạm Hoàng Dạ bạn nhắn tin vào bên page mình để được hỗ trợ nhé</div>
+                                    <div class="d-flex" style="margin-top: 5px;">
+                                        <a style="color: #337ab7;">Trả lời</a>
+                                        <div style="color: #a37878; margin-left: 20px;">
+                                            <small>5 giờ trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_person_commnet clearfix">
+                    <div class="row" style="padding: 7px 0;">
+                        <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                            <img src="IMGs/ava1.jpg" alt="" style="max-width:50px;border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="detail-rating">
+                                <b>Ngô Đông Văn</b>
+                                <img src="IMGs/copper.png" alt="" width="15px" height="15px" style="margin-left: 5px;">
+                            </div>
+                            <div style="padding-bottom: 5px;"></div>
+                            <div class="text-review">bao giờ có lại gói 1 tháng vậy ạ :(((</div>
+                            <div class="d-flex" style="margin-top: 5px;">
+                                <a style="color: #337ab7;">Trả lời</a>
+                                <div style="color: #a37878; margin-left: 20px;">
+                                    <small>Hôm qua</small>
+                                </div>
+                            </div>
+                            <div class="reply-comment row">
+                                <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                                    <img src="IMGs/divine_esports_1.png" alt="" style="max-width:50px;border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-11 col-10">
+                                    <div class="detail-rating">
+                                        <b>CSKH - Minh Cường</b>
+                                        <i class="fa fa-check-circle" style="color: #3ecb78; margin-left: 5px;"></i>
+                                    </div>
+                                    <div style="padding-bottom: 5px;"></div>
+                                    <div class="text-review">@Ngô Đông Văn Dạ bạn kiểm tra lại trong ngày hôm nay nha gói sẽ được mở bán lại đó ạ</div>
+                                    <div class="d-flex" style="margin-top: 5px;">
+                                        <a style="color: #337ab7;">Trả lời</a>
+                                        <div style="color: #a37878; margin-left: 20px;">
+                                            <small>10 giờ trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_person_commnet clearfix hidden-product">
+                    <div class="row" style="padding: 7px 0;">
+                        <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                            <img src="IMGs/avt.png" alt="" style="max-width:50px;border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="detail-rating">
+                                <b>toan nguyen</b>
+                                <img src="IMGs/silver.png" alt="" width="15px" height="15px" style="margin-left: 5px;">
+                                <div style="color: #ea9f00;margin-left: 10px;">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Đã mua sản phẩm này
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 5px;"></div>
+                            <div class="text-review">bao gio co goi 1 nam vay :(</div>
+                            <div class="d-flex" style="margin-top: 5px;">
+                                <a style="color: #337ab7;">Trả lời</a>
+                                <div style="color: #a37878; margin-left: 20px;">
+                                    <small>3 giờ trước</small>
+                                </div>
+                            </div>
+                            <div class="reply-comment row">
+                                <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                                    <img src="IMGs/avt.png" alt="" style="max-width:50px;border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-11 col-10">
+                                    <div class="detail-rating">
+                                        <b>CSKH - Linda</b>
+                                        <i class="fa fa-check-circle" style="color: #3ecb78; margin-left: 5px;"></i>
+                                    </div>
+                                    <div style="padding-bottom: 5px;"></div>
+                                    <div class="text-review">@toan nguyen Dạ bạn hãy theo dõi kho hàng Netflix liên tục để nhận được thông báo mới nhất nha . Sớm thôi ạ </div>
+                                    <div class="d-flex" style="margin-top: 5px;">
+                                        <a style="color: #337ab7;">Trả lời</a>
+                                        <div style="color: #a37878; margin-left: 20px;">
+                                            <small>3 giờ trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_person_commnet clearfix hidden-product">
+                    <div class="row" style="padding: 7px 0;">
+                        <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                            <img src="IMGs/ava1.jpg" alt="" style="max-width:50px;border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="detail-rating">
+                                <b>Ngô Đông Văn</b>
+                                <img src="IMGs/copper.png" alt="" width="15px" height="15px" style="margin-left: 5px;">
+                            </div>
+                            <div style="padding-bottom: 5px;"></div>
+                            <div class="text-review">bao giờ có lại gói 1 tháng vậy ạ :(((</div>
+                            <div class="d-flex" style="margin-top: 5px;">
+                                <a style="color: #337ab7;">Trả lời</a>
+                                <div style="color: #a37878; margin-left: 20px;">
+                                    <small>Hôm qua</small>
+                                </div>
+                            </div>
+                            <div class="reply-comment row">
+                                <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                                    <img src="IMGs/divine_esports_1.png" alt="" style="max-width:50px;border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-11 col-10">
+                                    <div class="detail-rating">
+                                        <b>CSKH - Minh Cường</b>
+                                        <i class="fa fa-check-circle" style="color: #3ecb78; margin-left: 5px;"></i>
+                                    </div>
+                                    <div style="padding-bottom: 5px;"></div>
+                                    <div class="text-review">@Ngô Đông Văn Dạ bạn kiểm tra lại trong ngày hôm nay nha gói sẽ được mở bán lại đó ạ</div>
+                                    <div class="d-flex" style="margin-top: 5px;">
+                                        <a style="color: #337ab7;">Trả lời</a>
+                                        <div style="color: #a37878; margin-left: 20px;">
+                                            <small>10 giờ trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_person_commnet clearfix hidden-product">
+                    <div class="row" style="padding: 7px 0;">
+                        <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                            <img src="IMGs/avt.png" alt="" style="max-width:50px;border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="detail-rating">
+                                <b>Phúc Nguyễn Phạm Hoàng</b>
+                                <div style="color: #ea9f00;margin-left: 10px;">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Đã mua sản phẩm này
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 5px;"></div>
+                            <div class="text-review">Mình lỗi đăng nhập vào nó hiện Restart your membership ấy ạ</div>
+                            <div class="d-flex" style="margin-top: 5px;">
+                                <a style="color: #337ab7;">Trả lời</a>
+                                <div style="color: #a37878; margin-left: 20px;">
+                                    <small>5 giờ trước</small>
+                                </div>
+                            </div>
+                            <div class="reply-comment row">
+                                <div class="col-lg-1 col-2" style="padding-left: 0;padding-right: 0;text-align:center;">
+                                    <img src="IMGs/divine-fb-logo.jpg" alt="" style="max-width:50px;border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-11 col-10">
+                                    <div class="detail-rating">
+                                        <b>CSKH - RiasGremory</b>
+                                        <i class="fa fa-check-circle" style="color: #3ecb78; margin-left: 5px;"></i>
+                                    </div>
+                                    <div style="padding-bottom: 5px;"></div>
+                                    <div class="text-review">@Phúc Nguyễn Phạm Hoàng Dạ bạn nhắn tin vào bên page mình để được hỗ trợ nhé</div>
+                                    <div class="d-flex" style="margin-top: 5px;">
+                                        <a style="color: #337ab7;">Trả lời</a>
+                                        <div style="color: #a37878; margin-left: 20px;">
+                                            <small>5 giờ trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loadMoreComment" onclick="loadMoreComment(this, '#list_comment')">Xem thêm bình luận</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top" style="margin-top:20px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 flex-row d-flex">
+                        <div class="img">
+                            <img src="IMGs/service1.png" alt="GIAO HÀNG SIÊU TỐC">
+                        </div>
+                        <div style="margin-left:20px;">
+                            <span style="font-size:13px;font-weight:bold;text-transform:uppercase;">
+                                GIAO HÀNG SIÊU TỐC
+                            </span>
+                            <p style="font-size:13px;">
+                                Hệ thống giao hàng tự động chỉ trong 3 phút
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 flex-row d-flex">
+                        <div class="img">
+                            <img src="IMGs/service2.png" alt="BẢO HÀNH NHANH CHÓNG">
+                        </div>
+                        <div style="margin-left:20px;">
+                            <span style="font-size:13px;font-weight:bold;text-transform:uppercase;">
+                                BẢO HÀNH NHANH CHÓNG                            
+                            </span>
+                            <p style="font-size:13px;">
+                                Mọi yêu cầu hỗ trợ sẽ được đội ngũ tư vấn giải quyết trực tiếp.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 flex-row d-flex">
+                        <div class="img">
+                            <img src="IMGs/service3.png" alt="UY TÍN 5 SAO">
+                        </div>
+                        <div style="margin-left:20px;">
+                            <span style="font-size:13px;font-weight:bold;text-transform:uppercase;">
+                                UY TÍN 5 SAO
+                            </span>
+                            <p style="font-size:13px;">
+                                Được cộng đồng bình chọn là shop game uy tín nhất VN
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 flex-row d-flex">
+                        <div class="img">
+                            <img src="IMGs/service4.png" alt="HỖ TRỢ TẬN TÌNH">
+                        </div>
+                        <div style="margin-left:20px;">
+                            <span style="font-size:13px;font-weight:bold;text-transform:uppercase;">
+                                HỖ TRỢ TẬN TÌNH
+                            </span>
+                            <p style="font-size:13px;">
+                                Hệ thống hỗ trợ online liên tục từ 8h - 24h
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-body">
+            <div class="container">
+                <div class="row position-relative service">
+                    <div class="col-lg-6 col-xl-3 flex-column">
+                        <div class="paragraph">DIVINESHOP</div>
+                        <ul>
+                            <li><a href="#" target="_blank">Game bản quyền là gì?</a></li>
+                            <li><a href="#" target="_blank">Giới thiệu Divine Shop</a></li>
+                            <li><a href="#" target="_blank">Điều khoản dịch vụ</a></li>
+                            <li><a href="#" target="_blank">Chính sách bảo mật</a></li>
+                            <li><a href="#" target="_blank">Donate nhân viên CSKH</a></li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-6 col-xl-2 flex-column">
+                        <div class="paragraph">TÀI KHOẢN</div>
+                        <ul>
+                            <li><a href="#">Giỏ hàng</a></li>
+                            <li><a href="#">Đăng kí</a></li>
+                            <li><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Sản phẩm đã mua</a></li>
+                            <li><a href="#">Chế độ bảo hành</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 flex-column">
+                        <div class="paragraph">LIÊN HỆ</div>
+                        <ul>
+                            <li><a href="#">Địa chỉ giao dịch trực tiếp</a></li>
+                            <li>Hotline: <a href="#">1900 633 305</a> (8:00 - 24:00)</li>
+                            <li>Email: hotro@divineshop.vn</li>
+                            <li><a href="#">Fanpage</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 flex-column">
+                        <div class="fanpage">
+                            <div class="fanpage-box">
+                                <a href="#" target="_blank" class="float-start">
+                                    <img src="IMGs/divine-fb-logo.jpg" height="50" width="50" alt="">
+                                </a>
+                                <div class="fanpage-title float-start">
+                                    <div>
+                                        <a href="#" style="max-width: 207px;">
+                                            Divine Shop - Game bản quyền
+                                        </a>
+                                    </div>
+                                    <div class="like" style="max-width: 227px;">
+                                        323.754 lượt thích
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
